@@ -8,7 +8,7 @@ public class Client {
         try 
         {
             Registry registry = LocateRegistry.getRegistry("127.0.0.1", 4000);
-            Circle circle = (Circle) registry.lookup("rmi://localhost:4000/circle");
+            Circle circle = (Circle) registry.lookup("rmi://localhost:4000/circle");                                                                        
             int radius;
             Scanner inp=new Scanner(System.in);
             System.out.print("Enter the radius of the circle: ");
